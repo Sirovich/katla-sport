@@ -22,10 +22,10 @@ export class HiveListComponent implements OnInit {
   }
 
   onDelete(hiveId: number) {
-    var hive = this.hives.find(h => h.id == hiveId);
-    this.hiveService.setHiveStatus(hiveId, true).subscribe(c => hive.isDeleted = true);
+    this.hiveService.setHiveStatus(hiveId, true).subscribe();
   }
 
   onRestore(hiveId: number) {
+    this.hiveService.setHiveStatus(hiveId, false).subscribe();
   }
 }
