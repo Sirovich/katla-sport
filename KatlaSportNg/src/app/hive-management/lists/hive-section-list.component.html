@@ -10,8 +10,8 @@
     <tbody>
         <tr *ngFor="let hiveSection of hiveSections">
             <th scope="row">{{hiveSection.id}}</th>
-            <td>{{hiveSection.code}}</td>
             <td>{{hiveSection.name}}</td>
+            <td>{{hiveSection.code}}</td>
             <td>
                 <div class="btn-group mr-2" role="group" aria-label="Edit group">
                     <button routerLink="/section/{{hiveSection.id}}" type="button" class="btn btn-primary">Edit</button>
