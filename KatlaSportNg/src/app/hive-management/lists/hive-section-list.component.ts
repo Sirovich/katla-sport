@@ -29,10 +29,10 @@ export class HiveSectionListComponent implements OnInit {
   }
 
   onDelete(hiveSectionId: number) {
-    this.hiveSectionService.setHiveSectionStatus(hiveSectionId, true);
+    this.hiveSectionService.setHiveSectionStatus(hiveSectionId, true).subscribe();
   }
 
   onUndelete(hiveSectionId: number) {
-    this.hiveSectionService.setHiveSectionStatus(hiveSectionId, false);
+    this.hiveSectionService.setHiveSectionStatus(hiveSectionId, false).subscribe();
   }
 }

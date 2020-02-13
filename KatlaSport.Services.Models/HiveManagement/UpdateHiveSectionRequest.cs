@@ -21,6 +21,6 @@ namespace KatlaSport.Services.HiveManagement
         /// <summary>
         /// Gets or sets a store hive id.
         /// </summary>
-        public int StoreHiveId { get; set; }
+        public int HiveId { get; set; }
     }
 }
